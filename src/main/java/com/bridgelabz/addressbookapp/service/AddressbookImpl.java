@@ -32,7 +32,7 @@ public class AddressbookImpl implements AddressbookService{
     }
 
     @Override
-    public ResponseEntity<User> updateAddressBookData(int personId, User addressBookDTO) {
+    public ResponseEntity<User> updateAddressBookData(int personId, UserDTO addressBookDTO) {
         User addressBook = new User(personId, addressBookDTO);
         return new ResponseEntity<>(addressBook, HttpStatus.OK);
     }

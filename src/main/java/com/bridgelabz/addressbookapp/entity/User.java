@@ -3,11 +3,15 @@ package com.bridgelabz.addressbookapp.entity;
 import com.bridgelabz.addressbookapp.dto.UserDTO;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
+@Table
 public class User {
     @Id
+    @GeneratedValue
     private long id;
     private String firstName;
     private String lastName;

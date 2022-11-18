@@ -13,7 +13,7 @@ public interface AddressbookService {
 
     ResponseEntity<User> createAddressBookData(UserDTO addressBookDTO);
 
-    ResponseEntity<User> updateAddressBookData(int personId, User addressBookDTO);
+    ResponseEntity<User> updateAddressBookData(int personId, UserDTO addressBookDTO);
 
     ResponseEntity<String> deleteAddressBookData(int personId);
 }
